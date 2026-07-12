@@ -309,12 +309,12 @@ section {
 }
 
 /* ==========================================================================
-   BỐ CỤC PHẦN GIỚI THIỆU (HERO) MỚI — 2 CỘT & KHUNG ẢNH CHỮ NHẬT ĐỨNG
+   BỐ CỤC PHẦN GIỚI THIỆU (HERO) — 2 CỘT & KHUNG CHỮ NHẬT NGANG (4:3)
    ========================================================================== */
 .hero {
   display: grid;
-  grid-template-columns: 1.1fr 1.9fr;
-  gap: 50px;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 45px;
   align-items: center;
   text-align: left;
   padding-top: 60px;
@@ -325,6 +325,7 @@ section {
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .hero-right-col {
@@ -337,13 +338,13 @@ section {
 .avatar-wrap {
   position: relative;
   width: 100%;
-  max-width: 290px;
+  max-width: 380px; /* Tăng nhẹ độ rộng tối đa để khung ngang nhìn cân đối hơn */
 }
 
-/* Khung chữ nhật dọc tỉ lệ 3:4 hoàn hảo ôm trọn dáng đứng/ngồi ảnh kimono */
+/* KHUNG CHỮ NHẬT NGANG TỶ LỆ 4:3 */
 .avatar-frame {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   border-radius: var(--radius-sm);
   background: linear-gradient(150deg, var(--sakura), var(--sky-lilac));
   padding: 6px;
@@ -357,7 +358,7 @@ section {
   50% { transform: translateY(-12px) rotate(1deg); }
 }
 
-/* Viền nét đứt trang trí bên ngoài tự động co dãn theo khung chữ nhật */
+/* Viền nét đứt bên ngoài tự động ôm theo khung chữ nhật ngang */
 .avatar-frame::before {
   content: "";
   position: absolute;
@@ -367,7 +368,7 @@ section {
   pointer-events: none;
 }
 
-/* Khung chứa ảnh thực tế */
+/* Ruột khung chứa ảnh */
 .avatar-inner {
   width: 100%;
   height: 100%;
