@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngô Chúc An - Portfolio 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Nhúng liên kết file CSS bên ngoài vào đây -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blob-wrap" id="blobWrap1"><div class="blob blob-1"></div></div>
+<div class="blob-wrap" id="blobWrap2"><div class="blob blob-2"></div></div>
+<div class="blob-wrap" id="blobWrap3"><div class="blob blob-3"></div></div>
+<div class="blob-wrap" id="blobWrap4"><div class="blob blob-4"></div></div>
+<div id="sticker-layer"></div>
+<div id="bubble-layer"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav>
+  <div class="logo-group">
+    <span class="logo-mark">🌸</span>
+    <div class="logo">Chúc An</div>
+    <span class="mssv-chip">MSV: 25041993</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#gioi-thieu" class="nav-link">Giới thiệu</a></li>
+    <li><a href="#bai-tap" class="nav-link">Bài tập cá nhân</a></li>
+    <li><a href="#tong-ket" class="nav-link">Tổng kết</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="#" class="nav-btn nav-btn-outline">📁 Google Drive</a>
+    <a href="#" class="nav-btn nav-btn-solid">Gửi phản hồi</a>
+  </div>
+</nav>
+
+<!-- PHẦN GIỚI THIỆU (HERO SECTION) CẬP NHẬT BỐ CỤC 2 CỘT MỚI -->
+<section class="hero" id="gioi-thieu">
+  <!-- CỘT BÊN TRÁI: KHUNG CHỮ NHẬT DỌC ĐỰNG ẢNH CHÂN DUNG -->
+  <div class="hero-left-col">
+    <div class="avatar-wrap reveal">
+      <div class="avatar-frame">
+        <div class="speech-bubble">こんにちは~ 🌸</div>
+        <div class="avatar-inner">
+          <!-- Thay thế 'anh-kimono.jpg' bằng đúng tên file ảnh của bạn nhé -->
+          <img src="anh-kimono.jpg" alt="Ngô Chúc An" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex;width:100%;height:100%;align-items:center;justify-content:center;font-size:3.5rem;font-family:inherit;\'>CA</div>';">
+        </div>
+        <div class="sticker">🍡</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CỘT BÊN PHẢI: TOÀN BỘ THÔNG TIN TEXT & BUTTON -->
+  <div class="hero-right-col">
+    <span class="eyebrow reveal">🌸 Portfolio cá nhân</span>
+    <h1 class="reveal">Xin chào! Mình là<br><span>Ngô Chúc An</span></h1>
+    <p class="reveal">Sinh viên ngành <b>Ngôn ngữ và Văn hóa Nhật Bản</b> tại <b>Trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội</b>. Portfolio này giống như một cuốn sổ tay nhỏ, nơi mình cất giữ toàn bộ dấu ấn của hành trình chinh phục học phần Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo — từ những bài thực hành đầu tiên cho đến những trải nghiệm giúp mình tự tin hơn với công nghệ. Ngoài giờ học, mình là người thích la cà tìm hiểu ẩm thực khắp các quốc gia qua màn ảnh nhỏ, và luôn dành một góc trong ngày để vui đùa cùng những chú mèo đáng yêu của mình.</p>
+
+    <div class="profile-grid reveal">
+      <div class="profile-card">
+        <div class="p-label">🍜 Sở thích</div>
+        <p>Mình thích xem và tìm hiểu về nền ẩm thực của nhiều quốc gia khác nhau, đồng thời dành thời gian mỗi ngày để chăm sóc và nuôi những chú mèo nhỏ của mình.</p>
+      </div>
+      <div class="profile-card">
+        <div class="p-label">🎯 Mục tiêu học tập</div>
+        <p>Mình muốn khẳng định và chứng minh được năng lực thực sự của bản thân sau 4 năm học tập tại giảng đường đại học.</p>
+      </div>
+      <div class="profile-card">
+        <div class="p-label">🌸 Định hướng phát triển</div>
+        <p>Sau 4 năm, mình mong muốn thành thạo nhiều kỹ năng mềm như thuyết trình, làm việc nhóm, ứng dụng AI vào công việc,... và sở hữu tấm bằng JLPT N1.</p>
+      </div>
+      <div class="profile-card">
+        <div class="p-label">📇 Mục tiêu Portfolio</div>
+        <p>Mình muốn tạo ra một chiếc CV giới thiệu bản thân thật độc đáo, ấn tượng và dễ dàng chia sẻ với mọi người xung quanh.</p>
+      </div>
+    </div>
+
+    <div class="tag-chips reveal">
+      <span class="tag-chip">🌸 MSV: 25041993</span>
+      <span class="tag-chip">🌸 Ngành NN&amp;VH Nhật Bản</span>
+      <span class="tag-chip">🌸 ĐH Ngoại ngữ - ĐHQGHN</span>
+    </div>
+    <div class="hero-cta reveal">
+      <a href="#bai-tap" class="btn btn-primary">Xem bài tập của mình 🌸</a>
+      <a href="#tong-ket" class="btn btn-ghost">Xem tổng kết ✨</a>
+    </div>
+  </div>
+</section>
+
+<section id="bai-tap">
+  <div class="section-head reveal">
+    <span class="eyebrow">Sản phẩm cá nhân</span>
+    <h2>Hành trình 6 bài tập cá nhân 🌸</h2>
+    <p>Mỗi bài tập là một "cánh hoa" trên hành trình nở rộ cùng công nghệ số của mình</p>
+  </div>
+  <div class="grow-timeline">
+    <div class="stem-line"></div>
+
+    <div class="grow-node left reveal">
+      <div class="node-leaf"><span>1</span></div>
+      <div class="node-card">
+        <span class="tag">Bài 1</span>
+        <h3>🌸 Máy tính và các thiết bị ngoại vi</h3>
+        <p><b>Mục tiêu:</b> Hình thành thói quen sắp xếp dữ liệu khoa học, hiểu rõ chức năng từng thiết bị ngoại vi để phục vụ tối đa cho việc học tập và làm việc.<br><br><b>Quá trình thực hiện:</b> Mình đã thực hành phân loại, đặt tên thư mục theo hệ thống rõ ràng, đồng thời luyện tập các phím tắt thông dụng để thao tác nhanh và gọn hơn trên máy tính.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px; font-size:0.85rem;">Xem báo cáo</a>
+      </div>
+    </div>
+
+    <div class="grow-node right reveal">
+      <div class="node-leaf"><span>2</span></div>
+      <div class="node-card">
+        <span class="tag">Bài 2</span>
+        <h3>🎋 Tìm kiếm và đánh giá thông tin học thuật</h3>
+        <p><b>Mục tiêu:</b> Rèn giũa khả năng tra cứu và sàng lọc nguồn tài liệu đáng tin cậy, phục vụ cho việc nghiên cứu ngôn ngữ và văn hóa Nhật Bản.<br><br><b>Quá trình thực hiện:</b> Mình vận dụng các cú pháp tìm kiếm nâng cao để lọc ra tài liệu học thuật chất lượng, sau đó so sánh và đối chiếu nhiều nguồn để đảm bảo độ chính xác của thông tin.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px; font-size:0.85rem;">Xem báo cáo</a>
+      </div>
+    </div>
+
+    <div class="grow-node left reveal">
+      <div class="node-leaf"><span>3</span></div>
+      <div class="node-card">
+        <span class="tag">Bài 3</span>
+        <h3>🍡 Viết Prompt hiệu quả cho các tác vụ học tập</h3>
+        <p><b>Mục tiêu:</b> Học cách trò chuyện với AI một cách thông minh, biến nó thành trợ thủ đắc lực hỗ trợ mình trong việc tra cứu, dịch thuật và ôn tập kiến thức.<br><br><b>Quá trình thực hiện:</b> Mình thử nghiệm nhiều cách đặt câu lệnh khác nhau, từ đơn giản đến chi tiết, để tìm ra công thức Prompt giúp AI trả lời đúng trọng tâm và hữu ích nhất.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px; font-size:0.85rem;">Xem báo cáo</a>
+      </div>
+    </div>
+
+    <div class="grow-node right reveal">
+      <div class="node-leaf"><span>4</span></div>
+      <div class="node-card">
+        <span class="tag">Bài 4</span>
+        <h3>⛩️ Giao tiếp và hợp tác trong môi trường số</h3>
+        <p><b>Mục tiêu:</b> Làm quen với cách phối hợp nhóm qua nền tảng số, đảm bảo mọi thành viên đều nắm được tiến độ công việc chung.<br><br><b>Quá trình thực hiện:</b> Mình cùng nhóm thiết lập không gian làm việc chung, phân chia đầu việc rõ ràng và cùng nhau chỉnh sửa tài liệu trực tuyến theo thời gian thực.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px; font-size:0.85rem;">Xem báo cáo</a>
+      </div>
+    </div>
+
+    <div class="grow-node left reveal">
+      <div class="node-leaf"><span>5</span></div>
+      <div class="node-card">
+        <span class="tag">Bài 5</span>
+        <h3>🎏 Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</h3>
+        <p><b>Mục tiêu:</b> Khai thác các công cụ AI tạo sinh để biến những ý tưởng học tập thành các sản phẩm hình ảnh, nội dung trực quan và bắt mắt hơn.<br><br><b>Quá trình thực hiện:</b> Mình kết hợp nhiều công cụ AI để lên ý tưởng, tạo hình ảnh minh họa và hoàn thiện một sản phẩm infographic tổng kết bài học của riêng mình.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px; font-size:0.85rem;">Xem báo cáo</a>
+      </div>
+    </div>
+
+    <div class="grow-node right reveal">
+      <div class="node-leaf"><span>6</span></div>
+      <div class="node-card">
+        <span class="tag">Bài 6</span>
+        <h3>🍥 An toàn và liêm chính học thuật trong môi trường số</h3>
+        <p><b>Mục tiêu:</b> Hiểu rõ ranh giới giữa việc tham khảo, hỗ trợ từ AI và hành vi vi phạm bản quyền, từ đó xây dựng thói quen làm việc minh bạch, có trách nhiệm.<br><br><b>Quá trình thực hiện:</b> Mình tìm hiểu các quy định về liêm chính học thuật, luyện tập cách trích dẫn nguồn rõ ràng và tự kiểm tra lại tính trung thực trong từng sản phẩm của mình.</p>
+        <a href="#" target="_blank" rel="noopener" class="btn btn-primary" style="padding:9px 18px; font-size:0.85rem;">Xem báo cáo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="tong-ket">
+  <div class="summary-card reveal">
+    <span class="eyebrow">Tổng kết</span>
+    <h2>Nhìn nhận &amp; Trải nghiệm học tập 🌸</h2>
+    <p class="quote">"Ngôn ngữ giúp mình chạm đến một nền văn hóa mới, còn công nghệ giúp hành trình ấy trở nên gần hơn bao giờ hết."</p>
+
+    <div class="tab-switcher">
+      <button class="tab-btn active" data-tab="baihoc">🌸 Bài học</button>
+      <button class="tab-btn" data-tab="truongthanh">🎋 Trưởng thành</button>
+      <button class="tab-btn" data-tab="camnhan">🍡 Cảm nhận</button>
+    </div>
+
+    <div class="tab-panels">
+      <div class="tab-panel active" id="panel-baihoc">
+        <h3>🔑 Bài học nhận được thông qua quá trình học</h3>
+        <p>Qua học phần này, mình nhận ra công nghệ chỉ thực sự phát huy giá trị khi đi cùng tư duy phản biện và sự chọn lọc của người sử dụng. Mình học được cách đặt câu hỏi rõ ràng cho AI, đồng thời hiểu rõ hơn về trách nhiệm khi ứng dụng công nghệ vào học tập, luôn giữ vững sự trung thực trong mọi sản phẩm cá nhân.</p>
+      </div>
+      <div class="tab-panel" id="panel-truongthanh">
+        <h3>🌱 Sự trưởng thành</h3>
+        <p>Từ một người còn khá bỡ ngỡ với các thao tác công nghệ cơ bản, mình đã dần tự tin hơn khi tự tay quản lý dữ liệu, phối hợp cùng đồng đội và vận dụng AI như một người bạn đồng hành trong học tập. Đây thực sự là một bước tiến rõ rệt trong tư duy số của mình.</p>
+      </div>
+      <div class="tab-panel" id="panel-camnhan">
+        <h3>💗 Cảm nghĩ sau khi thực hiện Portfolio</h3>
+        <p>Nhìn lại chặng đường đã qua qua từng trang portfolio này, mình cảm thấy khá tự hào về bản thân. Đây không đơn thuần là nơi lưu bài tập, mà còn là một chiếc CV nho nhỏ, độc đáo và rất "mình" — giúp mình dễ dàng giới thiệu bản thân đến với mọi người xung quanh.</p>
+      </div>
+    </div>
+
+    <hr class="summary-divider">
+
+    <div class="badge-row">
+      <div class="badge-circle reveal"><span class="num">06/06</span><span class="label">Dự án hoàn thành</span></div>
+      <div class="badge-circle reveal"><span class="num">100%</span><span class="label">Nhiệt huyết &amp; cố gắng</span></div>
+      <div class="badge-circle reveal"><span class="num">N1</span><span class="label">Mục tiêu tiếng Nhật</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="mark">🌸</span> made by Ngô Chúc An — cảm ơn đã ghé thăm! <span class="mark">🍡</span>
+</footer>
+
+<script>
+  const stickerEmojis = ['🌸','🎋','🍡','⛩️','🎏','🍥','✨','💮'];
+  const layer = document.getElementById('sticker-layer');
+  const stickers = [];
+  for(let i=0;i<16;i++){
+    const el = document.createElement('div');
+    el.className = 'float-sticker';
+    el.textContent = stickerEmojis[i % stickerEmojis.length];
+    const left = Math.random()*100;
+    const top = Math.random()*400;
+    el.style.left = left + 'vw';
+    el.style.top = top + 'vh';
+    el.style.animationDelay = (Math.random()*4) + 's';
+    el.style.animationDuration = (4 + Math.random()*3) + 's';
+    el.style.fontSize = (1.2 + Math.random()*1.3) + 'rem';
+    layer.appendChild(el);
+    stickers.push({ el, speed: 0.05 + Math.random()*0.15 });
+  }
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    stickers.forEach(s => {
+      s.el.style.transform = `translateY(${-y * s.speed}px)`;
+    });
+  }, { passive: true });
+
+  const bubbleColors = ['rgba(251,201,222,0.55)','rgba(230,223,246,0.55)','rgba(255,220,194,0.55)','rgba(217,234,208,0.55)','rgba(247,184,206,0.55)'];
+  const bubbleLayer = document.getElementById('bubble-layer');
+  for(let i=0;i<18;i++){
+    const b = document.createElement('div');
+    b.className = 'rise-bubble';
+    const size = 10 + Math.random()*26;
+    b.style.width = size + 'px';
+    b.style.height = size + 'px';
+    b.style.left = (Math.random()*100) + 'vw';
+    b.style.background = bubbleColors[i % bubbleColors.length];
+    b.style.animationDuration = (10 + Math.random()*12) + 's';
+    b.style.animationDelay = (Math.random()*14) + 's';
+    bubbleLayer.appendChild(b);
+  }
+
+  const blobIds = ['blobWrap1','blobWrap2','blobWrap3','blobWrap4'];
+  const blobState = blobIds.map((id, i) => ({ el: document.getElementById(id), scrollFactor: 0.05 + i * 0.025, mouseDepth: (i + 1) * 10, lastMouse: { x: 0, y: 0 } }));
+  function updateBlobs(){
+    blobState.forEach(s => {
+      const sy = -window.scrollY * s.scrollFactor;
+      const mx = s.lastMouse.x * s.mouseDepth;
+      const my = s.lastMouse.y * s.mouseDepth;
+      s.el.style.transform = `translate(${mx}px, ${sy + my}px)`;
+    });
+  }
+  updateBlobs();
+  window.addEventListener('scroll', updateBlobs, { passive: true });
+  window.addEventListener('mousemove', (e) => {
+    const cx = e.clientX / window.innerWidth - 0.5;
+    const cy = e.clientY / window.innerHeight - 0.5;
+    blobState.forEach(s => { s.lastMouse = { x: cx, y: cy }; });
+    updateBlobs();
+  });
+
+  function addTilt(el, strength = 8){
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width - 0.5;
+      const py = (e.clientY - rect.top) / rect.height - 0.5;
+      el.style.transform = `perspective(700px) rotateY(${px * strength}deg) rotateX(${-py * strength}deg) translateY(-4px)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
+    });
+  }
+  document.querySelectorAll('.node-card, .tag-chip, .badge-circle, .profile-card').forEach(el => addTilt(el, 6));
+
+  const glow = document.getElementById('cursorGlow');
+  window.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+    glow.style.opacity = 1;
+  });
+  window.addEventListener('mouseleave', () => { glow.style.opacity = 0; });
+
+  document.addEventListener('click', (e) => {
+    const burstEmojis = ['🌸','✨','🍡','💮'];
+    for(let i=0;i<5;i++){
+      const b = document.createElement('div');
+      b.className = 'float-sticker';
+      b.textContent = burstEmojis[Math.floor(Math.random()*burstEmojis.length)];
+      b.style.left = (e.clientX + Math.random()*40-20) + 'px';
+      b.style.top = (e.clientY + Math.random()*40-20) + 'px';
+      b.style.position = 'fixed';
+      b.style.fontSize = '1rem';
+      b.style.animationDuration = '1s';
+      layer.appendChild(b);
+      setTimeout(()=>b.remove(), 1200);
+    }
+  });
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach((el, i) => {
+    el.style.transitionDelay = (i % 6) * 0.08 + 's';
+  });
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(el=>io.observe(el));
+
+  const navLinks = document.querySelectorAll('.nav-link');
+  document.querySelectorAll('a[href^="#"]').forEach(link=>{
+    link.addEventListener('click', (e)=>{
+      const target = document.querySelector(link.getAttribute('href'));
+      if(target){ e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  const sections = document.querySelectorAll('section[id]');
+  const navIo = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(l=>{ l.classList.toggle('active', l.getAttribute('href') === '#' + id); });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s=>navIo.observe(s));
+</script>
+</body>
+</html>
